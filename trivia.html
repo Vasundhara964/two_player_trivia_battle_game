@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Trivia Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup">
+        <h1>Two-Player Trivia Battle Game</h1>
+        <div class="setup">
+            <input type="text" id="player1" placeholder="Enter Player1 Name">
+            <input type="text" id="player2" placeholder="Enter Player2 Name">
+            <button id="startGame">Start Now</button>
+        </div>
+        <div class="categorySelection" style="display:none;">
+            <h2>Choose a Category</h2>
+            <select id="categoryList"></select>
+            <button id="selectCategory">Select</button>
+        </div>
+        <div class="questionSection" style="display:none;">
+            <h2 id="playerTurn"></h2>
+            <h3 id="questionText"></h3>
+            <button class="option" id="optionA">A.</button>
+            <button class="option" id="optionB">B.</button>
+            <button class="option" id="optionC">C.</button>
+            <button class="option" id="optionD">D.</button>
+        </div>
+        <div class="resultSection" style="display:none;">
+            <h2>Game Over!</h2>
+            <p id="finalScore"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
